@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image:linear-gradient(to right,red 50%,powderblue 50%);
+}
+h1{
+text-align:center;
+}
+.container{
+    text-align:center;
+    border: 2px dotted blue;
+    margin: auto;
+    padding: 10px;
+}
+.for{
+    background-color: lightgreen ;
+    margin: auto;
+    width: 300px;
+    padding: 40px;
+}
+.fa-regular {
+    margin-bottom: 30px;
+    font-size: xx-large;
+    background-color: aqua;
+    border-radius: 50%;
+    padding: 20px;
+}
+.user-name{
+    margin-left: 10px;
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+.user-password{
+    margin-left: 10px;
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+.bottom-section{
+    margin: auto;
+    width: 300px;
+    padding: 2px;
+    justify-content: space-between;
+}
+span{
+    margin-left: 5px;
+}
+#req{
+    margin-right: 90px;
+}
+#requ{
+    margin-right: 90px;
+}
