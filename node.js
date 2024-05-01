@@ -51,7 +51,7 @@ const authenticateToken = (request, response, next) => {
   }
 };
 app.get('/', async(request,response) => {
-  response.sendFile("/login.html",{root : __dirname});
+  response.sendFile("/index.html",{root : __dirname});
 });
 app.get('/signup', async(request,response)=>{
   response.sendFile(__dirname + "/signup.html")
@@ -95,7 +95,7 @@ app.post('/signup/userdetails',async(request,response)=>{
     const q = `insert into users (name,password) 
     values('${name}','${hasedPassword}');`;
     const dbResponse = await db.run(q);
-  response.sendFile(__dirname + "/login.html");
+  response.sendFile(__dirname + "/index.html");
   console.log("created");
   }
   else {
@@ -182,7 +182,7 @@ app.post('/signup/userdetails',async(request,response)=>{
     const qs = `insert into Users (name,password) 
     values('${name}','${hasedPassword}');`;
     const dbResponse = await db.run(qs);
-  response.sendFile(__dirname + "/login.html");
+  response.sendFile(__dirname + "/index.html");
   console.log("created");
   }
   else {
